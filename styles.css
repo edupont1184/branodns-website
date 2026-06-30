@@ -3,6 +3,9 @@
   --sage: #8fa98a;
   --sage-soft: #dfe8db;
   --moss: #5f7c4c;
+  --rose: #b85f73;
+  --rose-soft: #f3d9dc;
+  --blush: #fbefef;
   --beige: #e9dcc7;
   --beige-soft: #f6f0e7;
   --off-white: #fbfaf6;
@@ -80,7 +83,7 @@ a {
   display: grid;
   place-items: center;
   color: var(--off-white);
-  background: var(--forest);
+  background: linear-gradient(135deg, var(--forest) 0%, var(--forest) 68%, var(--rose) 100%);
   border-radius: var(--radius);
   box-shadow: 0 10px 24px rgba(31, 75, 53, 0.18);
 }
@@ -107,7 +110,7 @@ a {
   color: var(--off-white) !important;
   background: var(--forest);
   border-radius: var(--radius);
-  box-shadow: 0 10px 22px rgba(31, 75, 53, 0.18);
+  box-shadow: 0 10px 22px rgba(31, 75, 53, 0.18), 0 0 0 1px rgba(184, 95, 115, 0.12);
 }
 
 .nav-toggle {
@@ -193,7 +196,7 @@ a {
 
 .button-primary {
   color: var(--off-white);
-  background: var(--forest);
+  background: linear-gradient(135deg, var(--forest) 0%, #285b40 68%, var(--rose) 100%);
   box-shadow: 0 14px 30px rgba(31, 75, 53, 0.2);
 }
 
@@ -204,13 +207,13 @@ a {
 
 .button-secondary {
   color: var(--forest);
-  background: var(--beige-soft);
-  border-color: var(--line);
+  background: var(--blush);
+  border-color: #ead0d2;
 }
 
 .button-secondary:hover {
-  background: var(--sage-soft);
-  border-color: #c8d5c1;
+  background: var(--rose-soft);
+  border-color: #d7aab2;
 }
 
 .hero-media {
@@ -238,6 +241,7 @@ a {
   color: var(--charcoal);
   background: rgba(251, 250, 246, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.68);
+  border-left: 5px solid var(--rose);
   border-radius: var(--radius);
   box-shadow: 0 16px 34px rgba(31, 75, 53, 0.16);
   backdrop-filter: blur(14px);
@@ -265,7 +269,7 @@ a {
 
 .section-services,
 .section-process {
-  background: var(--beige-soft);
+  background: linear-gradient(180deg, var(--beige-soft) 0%, var(--blush) 100%);
 }
 
 .section-heading {
@@ -329,8 +333,8 @@ h3 {
 
 .service-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(143, 169, 138, 0.8);
-  box-shadow: 0 20px 42px rgba(39, 48, 43, 0.1);
+  border-color: rgba(184, 95, 115, 0.38);
+  box-shadow: 0 20px 42px rgba(39, 48, 43, 0.1), 0 10px 24px rgba(184, 95, 115, 0.1);
 }
 
 .icon-wrap {
@@ -342,6 +346,11 @@ h3 {
   color: var(--forest);
   background: var(--sage-soft);
   border-radius: var(--radius);
+}
+
+.service-card:nth-child(even) .icon-wrap {
+  color: var(--rose);
+  background: var(--rose-soft);
 }
 
 .icon-wrap svg {
@@ -385,7 +394,7 @@ h3 {
   width: min(330px, calc(100% - 48px));
   padding: 20px;
   background: var(--off-white);
-  border-left: 5px solid var(--sage);
+  border-left: 5px solid var(--rose);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -425,6 +434,11 @@ h3 {
   font-weight: 650;
 }
 
+.benefit-list div:nth-child(even) {
+  background: var(--blush);
+  border-color: #ead0d2;
+}
+
 .benefit-list span {
   color: var(--forest);
   font-weight: 800;
@@ -448,7 +462,7 @@ h3 {
 }
 
 .process-step:nth-child(2) {
-  background: #365d43;
+  background: #6f4f58;
 }
 
 .process-step:nth-child(3) {
@@ -485,7 +499,7 @@ h3 {
 }
 
 .section-contact {
-  background: linear-gradient(180deg, var(--off-white) 0%, var(--sage-soft) 100%);
+  background: linear-gradient(180deg, var(--off-white) 0%, var(--blush) 48%, var(--sage-soft) 100%);
 }
 
 .contact-grid {
@@ -559,8 +573,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--forest);
-  box-shadow: 0 0 0 4px rgba(143, 169, 138, 0.28);
+  border-color: var(--rose);
+  box-shadow: 0 0 0 4px rgba(184, 95, 115, 0.18);
 }
 
 .form-submit {
