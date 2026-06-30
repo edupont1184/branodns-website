@@ -71,9 +71,15 @@ a {
   align-items: center;
   gap: 10px;
   color: var(--forest);
-  font-size: 1.05rem;
-  font-weight: 800;
+  font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.15rem;
+  font-weight: 400;
   letter-spacing: 0;
+}
+
+.brand span {
+  display: inline-block;
+  padding-top: 3px;
 }
 
 .brand-logo {
@@ -826,6 +832,10 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
+  .brand {
+    font-size: 1.82rem;
+  }
+
   .brand-logo {
     width: 126px;
   }
