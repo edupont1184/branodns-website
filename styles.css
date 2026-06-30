@@ -151,8 +151,8 @@ a {
 .hero-content h1 {
   margin: 0;
   color: var(--forest);
-  font-size: clamp(4rem, 11vw, 8.8rem);
-  line-height: 0.86;
+  font-size: clamp(3.35rem, 7.5vw, 6.4rem);
+  line-height: 0.96;
   font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
@@ -166,13 +166,13 @@ a {
 }
 
 .hero-tagline {
-  margin: 28px 0 0;
+  margin: 22px 0 0;
   max-width: 560px;
   color: #304D37;
-  font-size: clamp(1.55rem, 3vw, 2.45rem);
-  line-height: 1.12;
-  font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif;
-  font-weight: 400;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  line-height: 1.28;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 750;
 }
 
 .hero-copy {
@@ -302,7 +302,7 @@ a {
 }
 
 .path-card h3 {
-  font-size: 2rem;
+  font-size: 1.72rem;
 }
 
 .path-card p {
@@ -363,8 +363,8 @@ a {
 h2 {
   margin: 0;
   color: var(--forest);
-  font-size: clamp(2rem, 4vw, 3.7rem);
-  line-height: 1.05;
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  line-height: 1.12;
   font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
@@ -900,7 +900,7 @@ textarea:focus {
   }
 
   .hero-content h1 {
-    font-size: clamp(2.85rem, 15.5vw, 4rem);
+    font-size: clamp(2.7rem, 12vw, 3.6rem);
   }
 
   .subpage-hero h1 {
