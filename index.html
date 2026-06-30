@@ -19,7 +19,7 @@
   <body>
     <header class="site-header" id="home">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="DUMP-IT home">
+        <a class="brand" href="index.html" aria-label="DUMP-IT home">
           <span>DUMP-IT</span>
         </a>
 
@@ -30,8 +30,10 @@
         </button>
 
         <div class="nav-links" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="residential.html">Residential</a>
+          <a href="commercial.html">Commercial</a>
           <a href="#services">Services</a>
-          <a href="#why-us">Why Us</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
           <a class="nav-call" href="tel:+17326084363">Call Now</a>
@@ -43,14 +45,15 @@
       <section class="hero section-shell">
         <div class="hero-content">
           <h1>DUMP-IT</h1>
-          <p class="hero-tagline">From garage cleanouts to construction debris, we'll haul it away.</p>
+          <p class="hero-tagline">Junk Removal & Hauling Made Easy</p>
           <p class="hero-copy">
-            You have the junk, DUMP-IT has the truck. Whether it is one old couch, a packed garage, a rental turnover, or a
-            whole renovation mess. When dump happens. We clean it up.
+            From old couches and garage cleanouts to construction debris and job site
+            hauling, we'll dump the junk so you don't have to.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#contact">Get a Free Quote</a>
-            <a class="button button-secondary" href="tel:+17326084363">Call Now</a>
+            <a class="button button-primary" href="residential.html">Residential Junk Removal</a>
+            <a class="button button-secondary" href="commercial.html">Commercial Hauling</a>
+            <a class="button button-call" href="tel:+17326084363">Call Now: 732-608-4363</a>
           </div>
         </div>
 
@@ -63,19 +66,32 @@
         </div>
       </section>
 
-      <section class="contractor-strip" aria-label="Contractor-focused service highlights">
-        <div class="section-shell contractor-grid">
-          <div>
-            <strong>Homes & cleanouts</strong>
-            <span>Garages, basements, attics, estates, moving cleanouts, and household junk.</span>
+      <section class="path-section" aria-label="Choose your DUMP-IT service path">
+        <div class="section-shell">
+          <div class="section-heading compact">
+            <span class="section-label">Choose Your Path</span>
+            <h2>What can we help you dump today?</h2>
+            <p>Got junk? We'll handle it. Pick the path that sounds most like your mess.</p>
           </div>
-          <div>
-            <strong>Sorted when possible</strong>
-            <span>Concrete, wood, metal, and recyclable material handled responsibly.</span>
-          </div>
-          <div>
-            <strong>Jobsites & heavy loads</strong>
-            <span>Construction debris, renovation cleanup, contractor hauling, and large bins.</span>
+
+          <div class="path-grid">
+            <article class="path-card">
+              <span class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 10 12 4l8 6v10H5v-7H4v-3Zm4 8h3v-4h2v4h3v-7l-4-3-4 3v7Z"/></svg>
+              </span>
+              <h3>Residential Junk Removal</h3>
+              <p>For homeowners, renters, moving cleanouts, garage cleanouts, furniture, appliances, yard waste, and everyday clutter.</p>
+              <a class="button button-primary" href="residential.html">I Need Residential Junk Removal</a>
+            </article>
+
+            <article class="path-card">
+              <span class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 8h12l3 4h3v6h-2.3a3 3 0 0 1-5.4 0H9.7a3 3 0 0 1-5.4 0H3V8Zm3 10a1 1 0 1 0 2 0 1 1 0 0 0-2 0Zm9 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0ZM5 10v3h9.5L13 10H5Z"/></svg>
+              </span>
+              <h3>Commercial & Construction Hauling</h3>
+              <p>For contractors, job sites, renovation debris, property cleanouts, landlords, businesses, and heavier hauling jobs.</p>
+              <a class="button button-primary" href="commercial.html">I Need Commercial Hauling</a>
+            </article>
           </div>
         </div>
       </section>
@@ -258,16 +274,15 @@
             <div class="form-row">
               <label for="service">Service needed</label>
               <select id="service" name="service" required>
-                <option value="">Choose a service</option>
-                <option>Garage, Basement & Attic Cleanouts</option>
-                <option>Furniture, Appliance & Hot Tub Removal</option>
-                <option>General Household Junk</option>
-                <option>Construction Debris Hauling</option>
-                <option>Demolition Debris</option>
-                <option>Property or Rental Cleanout</option>
-                <option>Yard Waste Removal</option>
-                <option>Dump Truck Hauling</option>
+                <option value="">Choose a service path</option>
+                <option>Residential Junk Removal</option>
+                <option>Commercial / Construction Hauling</option>
+                <option>Not Sure Yet</option>
               </select>
+            </div>
+            <div class="form-row">
+              <label for="location">Job location</label>
+              <input id="location" name="location" type="text" placeholder="Town, city, or job site address" />
             </div>
             <div class="form-row full">
               <label for="description">Job description</label>
@@ -275,7 +290,7 @@
                 id="description"
                 name="description"
                 rows="5"
-                placeholder="Tell us what needs to be removed, approximate amount, location, and access details."
+                placeholder="Tell us what needs to be removed, approximate amount, where it is on the property, and access details."
               ></textarea>
             </div>
             <div class="form-row">
@@ -292,7 +307,7 @@
     <footer class="footer">
       <div class="section-shell footer-grid">
         <div>
-          <a class="brand footer-brand" href="#home">
+          <a class="brand footer-brand" href="index.html">
             <img class="brand-logo" src="assets/dump-it-logo.svg" alt="DUMP-IT" />
           </a>
           <p>Residential junk removal, construction debris, cleanouts, dump truck hauling, and responsible disposal.</p>
@@ -305,10 +320,12 @@
         </div>
         <div>
           <h3>Links</h3>
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="residential.html">Residential</a>
+          <a href="commercial.html">Commercial</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
         </div>
       </div>
     </footer>
