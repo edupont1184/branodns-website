@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 92" role="img" aria-labelledby="title desc">
+  <title id="title">DUMP-IT logo</title>
+  <desc id="desc">Blue-collar professional DUMP-IT dump truck service logo</desc>
+  <rect width="260" height="92" rx="14" fill="#333333"/>
+  <path d="M20 59h21l7-21h32l8 21h20v10H20V59Z" fill="#C46A2E"/>
+  <path d="M36 38h42l-6-15H42l-6 15Z" fill="#F8F6F2"/>
+  <circle cx="50" cy="69" r="8" fill="#F8F6F2"/>
+  <circle cx="82" cy="69" r="8" fill="#F8F6F2"/>
+  <path d="M32 48h58" stroke="#2F6B3B" stroke-width="7" stroke-linecap="round"/>
+  <text x="114" y="55" fill="#F8F6F2" font-family="Arial Black, Impact, sans-serif" font-size="34" font-weight="900" letter-spacing="1">DUMP-IT</text>
+  <path d="M205 19c17 2 26 11 29 27-18-3-27-12-29-27Z" fill="#8FAE8A"/>
+  <path d="M210 25c8 4 15 10 20 17" fill="none" stroke="#2F6B3B" stroke-width="3" stroke-linecap="round"/>
+</svg>
