@@ -1,0 +1,6 @@
+# Local operating system and editor noise
+.DS_Store
+Thumbs.db
+
+# Temporary QA captures
+qa-*.png
